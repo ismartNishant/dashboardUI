@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container d-flex">
+        <div class="sidebar shadow-sm" id="side-nav">
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+                <h1 class="fs-4"><span class=" rounded text-white shadow  px-2 bg1">O</span> <span class="">Kayg </span></h1>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 clr2"><i
+                        class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+            <ul class="list-unstyled pe-2">
+                <li class="mb-5  ">
+                    <div class=" d-flex gap-2  justify-content-center align-content-center  align-items-center">
+                        <div class="profile overflow-hidden rounded-circle " style=" border:3px solid #1BCFB4">
+                            <img src="./imgs/self.jpg" alt="...">
+                        </div>
+                        <div class=" d-flex align-items-center">
+                            <div class="me-3">
+                                <p class="m-0 p-0 fw-bold clr2" >Nishant Rajput </p>
+                                <p class="m-0 small fw-bold">Admin</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-medal fs-4" style="color: #FE9496;"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class=" active mb-1"> <a class="text-decoration-none  px-3 py-2 d-block  " href="#">
+                        <i class="fa-solid fa-house me-2"></i> Dashboard</a>
+                </li>
+                <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block " href="#">
+                        <i class="fa-solid fa-list-ul me-2"></i> Projects</a>
+                </li>
+                <li class="mb-1">
+                    <a class="text-decoration-none  px-3 py-2 d-block d-flex justify-content-between align-items-center" href="#">
+                        <span><i class="fa-regular fa-comment me-2"></i> Messages </span>
+                        <span class="badge  text-white fw-bold  rounded-pill bg2">02 </span>
+                    </a>
+                </li>
+                <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                        <i class="fa-solid fa-chart-line me-2"></i> satistics</a>
+                </li>
+                <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                        <i class="fa-solid fa-envelope-open-text me-2"></i> Services</a>
+                </li>
+
+                <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                        <i class="fa-solid fa-users me-2"></i> Customers</a>
+                </li>
+                <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                        <i class="fa-solid fa-briefcase me-2"></i> WorkFlow</a>
+                </li>
+
+
+                <hr class="h-color mx-2">
+
+                <ul class="list-unstyled">
+                    <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                            <i class="fa-solid fa-gear me-2"></i> Settings</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="text-decoration-none  px-3 py-2 d-block d-flex justify-content-between align-items-center" href="#">
+                            <span> <i class="fa-regular fa-bell me-2"></i> Notificantions </span>
+                            <span class=" badge small fw-bold text-white rounded-pill"
+                                style="background-color:#FE9496 ;">10 </span>
+                        </a>
+                    </li>
+                    <li class="mb-1"> <a class="text-decoration-none  px-3 py-2 d-block" href="#">
+                            <i class="fa-regular fa-circle-question me-2"></i> Help</a>
+                    </li>
+                </ul>
+
+            </ul>
+        </div>
+        <div class="content px-2">
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+                <div class="container-fluid">
+
+                    <div class="d-flex justify-content-between d-md-none d-block">
+                        <a class="navbar-brand fs-4" href="#">OKayg</a>
+                        <button class="btn px-0 py-0 open-btn clr2" ><i
+                                class="fa-solid fa-bars-staggered"></i></button>
+                    </div>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <div>
+
+                            <div
+                                class="d-flex gap-3 py-2 text-center w-auto justify-content-between  align-items-center border px-3 rounded-pill">
+                                <input class="search border-0 py-0 px-1" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Search...">
+                                <i class="fa-solid fa-magnifying-glass clr2" ></i>
+                            </div>
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center justify-content-center py-2">
+                            <div class=" d-flex align-items-center">
+                                <a class="nav-link mx-2 " href="#"> <i class="fa-regular fa-envelope fs-4 clr1"></i> </a>
+                                <a class="nav-link  mx-2" href="#"> <i class="fa-solid fa-gear fs-4 clr1"></i> </a>
+                                <!-- <a class="nav-link mx-2 " href="#"> <i class="fa-regular fa-bell fs-4" style=" color: #A05AFF;"></i> </a> -->
+
+                            </div>
+
+                            <div class=" d-flex gap-1 justify-content-between align-content-center  align-items-center">
+                                <div class="profile overflow-hidden rounded-circle " style=" border:3px solid #A05AFF">
+                                    <img src="./imgs/self.jpg" alt="...">
+                                </div>
+                                <div>
+                                    <p class="m-0 p-0 fw-bold clr2">Nishant Rajput </p>
+                                    <p class="m-0 small fw-bold">Admin</p>
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown dropstart ">
+                                <a class="btn border-0" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical fs-4 clr1" ></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end position-absolute end-0 top-100 rounded-0">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="dashboard-content  pt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="clr1 " > <i class="fa-solid fa-house-chimney"></i> Dashboard</h4>
+                    <p class="small m-0">Today 04/07/2023 <i class="fa-solid fa-chevron-down"
+                            style="color: #FE9496;"></i></p>
+                </div>
+
+                <div class=" d-flex gap-2 justify-content-center flex-wrap mb-3 align-items-center" >
+                    <div class="overflow-hidden shadow-sm rounded-3 img-container ">
+                        <img src="./imgs/5764541.jpg"> 
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex justify-content-center gap-3 mb-3">
+                            <div class="card border-0 shadow-sm " >
+                                <div class="card-body ">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn bg1 text-white  rounded-0">People</a>
+                                </div>
+                            </div>
+                            <div class="card  me-0 border-0 shadow-sm" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn bg1 text-white  rounded-0" >Files</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center gap-3 ">
+                            <div class="card border-0 shadow-sm" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn bg1 text-white  rounded-0" >Tasks </a>
+                                </div>
+                            </div>
+                            <div class="card  me-0 border-0 shadow-sm" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn bg1 text-white  rounded-0" >Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-between mb-3 flex-wrap gap-2">
+                    <div class="col-8 shadow-sm rounded-1 border p-3  bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="m-0 fw-bold clr1">Document</h5>
+                            <div class="dropdown-center">
+                                <button class="btn small text-black fw-bold py-1" style="background: #FE9496;" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Weekly <i class="fa-solid fa-chevron-down" style="color: #000;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="">
+                            <ol class="list-group list-group-numbered border-0">
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                                  <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Subheading</div>
+                                    Content for list item
+                                  </div>
+                                  <span class="badge  rounded-pill bg2" >14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                                  <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Subheading</div>
+                                    Content for list item
+                                  </div>
+                                  <span class="badge  rounded-pill bg2" >14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                                  <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Subheading</div>
+                                    Content for list item
+                                  </div>
+                                  <span class="badge  rounded-pill bg2">14</span>
+                                </li>
+                              </ol>
+                        </div>
+                    </div>
+                    <div class="col-3  p-3 shadow-sm  rounded-2  bg-white">
+                        <p>Chats</p>
+                        <div class=" d-flex gap-3  align-content-center  align-items-center mb-3">
+                            <div class="profile overflow-hidden rounded-circle " style=" border:3px solid #A05AFF">
+                                <img src="./imgs/self.jpg" alt="...">
+                            </div>
+                            <div>
+                                <p class="m-0 p-0 fw-bold clr2" >Nishant Rajput </p>
+                                <p class="m-0 small fw-bold">Admin</p>
+                            </div>
+
+                        </div>
+                        <div class=" d-flex gap-3  align-content-center  align-items-center mb-3">
+                            <div class="profile overflow-hidden rounded-circle " style=" border:3px solid #A05AFF">
+                                <img src="./imgs/self.jpg" alt="...">
+                            </div>
+                            <div>
+                                <p class="m-0 p-0 fw-bold clr2">Nishant Rajput </p>
+                                <p class="m-0 small fw-bold">Admin</p>
+                            </div>
+
+                        </div>
+                        <div class=" d-flex gap-3  align-content-center  align-items-center mb-3">
+                            <div class="profile overflow-hidden rounded-circle " style=" border:3px solid #A05AFF">
+                                <img src="./imgs/self.jpg" alt="...">
+                            </div>
+                            <div>
+                                <p class="m-0 p-0 fw-bold clr2" >Nishant Rajput </p>
+                                <p class="m-0 small fw-bold">Admin</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dignissimos qui non aspernatur
+                    aliquid quaerat voluptas maxime odit quidem minus tempore veritatis quasi quibusdam obcaecati, et
+                    excepturi cum, adipisci nisi?</p>
+
+
+                    <div class="">
+                        <div class="m-2 bg-white px-3 py-4">
+                            <h3 class="text-center clr1 mb-3">Daily Analysis</h3>
+                            <div class="table-responsive shadow-sm  ">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr class="text-center ">
+                                            <th class="border">No</th>
+                                            <th class="border px-3"> <span class="d-flex gap-1 align-items-center"> <i class="fa-regular fa-user fs-5 clr1"></i> User </span> </th>
+                                            <th class="border">Stream</th>
+                                            <th class="border">Section</th>
+                                            <th class="border">Roll_No</th>
+                                            <th class="border">College</th>
+                                            <th class="border">Favourite Sub</th>
+                                            <th class="border">Classes</th>
+                                            <th class="border">Admission Via</th>
+                                            <th class="border">Registration_Id</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="border "><span class=" rounded-pill align-items-center px-2 fw-bold bg2   text-white">01 </span></td>
+                                            <td class="border ">
+                                                <div class="tble-img overflow-hidden rounded-circle m-auto ">
+                                                    <img src="./imgs/profile.png" alt="...">
+                                                </div>
+                                            </td>
+                                            <td class="border">Computer Science Engineering</td>
+                                            <td class="border">CSE A</td>
+                                            <td class="border">1445698658</td>
+                                            <td class="border">OKayg Education Institute</td>
+                                            <td class="border">Automata</td>
+                                            <td class="border">Morning Class</td>
+                                            <td class="border">Entrance Exam</td>
+                                            <td class="border">CSE-1445698658</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td class="border"><span class=" rounded-pill align-items-center px-2 fw-bold bg1  text-white">02 </span></td>
+                                            <td class="border">
+                                                <div class="tble-img overflow-hidden rounded-circle m-auto">
+                                                    <img src="./imgs/self.jpg" alt="...">
+                                                </div>
+                                            </td>
+                                            <td class="border">Computer Science Engineering</td>
+                                            <td class="border">CSE A</td>
+                                            <td class="border">1445698658</td>
+                                            <td class="border">OKayg Education Institute</td>
+                                            <td class="border">Automata</td>
+                                            <td class="border">Morning Class</td>
+                                            <td class="border">Entrance Exam</td>
+                                            <td class="border">CSE-1445698658</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td class="border"><span class=" rounded-pill align-items-center px-2 fw-bold bg2  text-white">03 </span></td>
+                                            <td class="border">
+                                                <div class="tble-img overflow-hidden rounded-circle m-auto">
+                                                    <img src="./imgs/profile.png" alt="...">
+                                                </div>
+                                            </td>
+                                            <td class="border">Computer Science Engineering</td>
+                                            <td class="border">CSE A</td>
+                                            <td class="border">1445698658</td>
+                                            <td class="border">OKayg Education Institute</td>
+                                            <td class="border">Automata</td>
+                                            <td class="border">Morning Class</td>
+                                            <td class="border">Entrance Exam</td>
+                                            <td class="border">CSE-1445698658</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td class="border"><span class=" rounded-pill align-items-center px-2 fw-bold bg1 text-white ">04 </span></td>
+                                            <td class="border">
+                                                <div class="tble-img overflow-hidden rounded-circle m-auto">
+                                                    <img src="./imgs/self.jpg" alt="...">
+                                                </div>
+                                            </td>
+                                            <td class="border">Computer Science Engineering</td>
+                                            <td class="border">CSE A</td>
+                                            <td class="border">1445698658</td>
+                                            <td class="border">OKayg Education Institute</td>
+                                            <td class="border">Automata</td>
+                                            <td class="border">Morning Class</td>
+                                            <td class="border">Entrance Exam</td>
+                                            <td class="border">CSE-1445698658</td>
+                                        
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+          
+        </div>
+    </div>
+
+    <!--left div-->
+    <script>
+
+    </script>
+    <script src="index.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
